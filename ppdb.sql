@@ -1,0 +1,50 @@
+/*
+SQLyog Professional v13.1.1 (64 bit)
+MySQL - 8.0.30 : Database - ppdb
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`ppdb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `ppdb`;
+
+/*Table structure for table `sekolah` */
+
+DROP TABLE IF EXISTS `sekolah`;
+
+CREATE TABLE `sekolah` (
+  `kode` int NOT NULL,
+  `nama_sekolah` text,
+  `kelurahan` text,
+  `kecamatan` text,
+  `status_sekolah` varchar(20) DEFAULT NULL,
+  `ikut_ppdb` varchar(6) DEFAULT NULL,
+  PRIMARY KEY (`kode`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+/*Data for the table `sekolah` */
+
+insert  into `sekolah`(`kode`,`nama_sekolah`,`kelurahan`,`kecamatan`,`status_sekolah`,`ikut_ppdb`) values 
+(1001,'SMPN 1 COLOMADU','GAWANAN','COLOMADU','NEGERI','IYA'),
+(1002,'SMPN 2 COLOMADU','MALANGJIWAN','COLOMADU','NEGERI','IYA'),
+(1003,'SMPN 3 COLOMADU','MALANGJIWAN','COLOMADU','NEGERI','IYA'),
+(1004,'SMPN 1 GONDANGREJO','TUBAN','GONDANGREJO','NEGERI','IYA'),
+(1005,'SMPN 2 GONDANGREJO','JATIKUMANG','GONDANGREJO','NEGERI','IYA'),
+(1006,'SMPN 3 GONDANGREJO','WONOSARI','GONDANGREJO','NEGERI','IYA'),
+(1007,'SMPN 1 JATEN','JATEN','JATEN','NEGERI','IYA'),
+(1008,'SMPN 2 JATEN','SROYO','JATEN','NEGERI','IYA'),
+(1009,'SMPN 1 JATIPURO','JATIPURO','JATIPURO','NEGERI','IYA'),
+(1010,'SMPN 2 JATIPURO','JATISUKO','JATIPURO','NEGERI','IYA');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
