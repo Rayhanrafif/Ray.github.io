@@ -1,0 +1,127 @@
+body {
+    background-color: #eeeeee;
+}
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h3 {
+    background-color: #B71B1C;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px black;
+}
+
+.h4 {
+    color: #464646;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    background:transparent;
+    border-radius: 5px;
+    border: 1px solid #98999D;
+    box-shadow: 0px 4px 8px #98999D;
+    justify-content: center;
+}
+
+.ray {
+    width: 100%;
+    background:transparent;
+    border-radius: 5px;
+    border: 1px solid #98999D ;
+    box-shadow: 0px 4px 8px #98999D;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    
+}
+td, th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+th {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.jalur {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.8vw;
+    justify-content: center;
+    margin: 20px 0;
+}
+.p {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    font-size: 1vw;
+}
+
+.pd {
+    color: white;
+    background-color: #3daddb;
+}
+
+.ngr {
+    background-color: #6ecb61;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    cursor: pointer; 
+    box-shadow: 0 0 0 4px #fff, 
+    0 0 0 8px yellow;
+    background-color: white;
+    color: black;
+}
+button{
+    border: none;
+    background-color: yellow;
+    color: white;
+    border-radius: 6px;
+    transition: 0,2s;
+}
+
+i {
+    color: orange;
+    font-weight: bold;
+}
+
+.img {
+    color: black;
+}
+
+.pp {
+    font-weight: bold;
+    color: black;
+}
